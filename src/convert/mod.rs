@@ -19,6 +19,9 @@ pub use color::{rgba2hex, Color};
 mod module_shape;
 pub use module_shape::{ModuleFunction, ModuleShape};
 
+mod eye_shape;
+pub use eye_shape::{EyeFrameShape, EyeFunction, EyePosition};
+
 #[cfg(all(target_arch = "wasm32", feature = "wasm-bindgen"))]
 use wasm_bindgen::prelude::*;
 
